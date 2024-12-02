@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="timer">
+        <svg width="260" height="260">
+          <circle
+            class="defaultCircle"
+            cx="125"
+            cy="125"
+            r="120"
+            stroke="#635bfc"
+            stroke-width="10"
+            fill="none"
+            stroke-linecap="round"
+          />
+          <circle
+            class="animateCircle"
+            cx="125"
+            cy="125"
+            r="120"
+            stroke="#635bfc"
+            stroke-width="10"
+            fill="none"
+            stroke-linecap="round"
+          />
+        </svg>
+
+        <span id="display">00:00:00.00</span>s
+      </div>
+
+      <p>Your time starts now</p>
+
+      <div class="controls">
+        <button id="startStop" onclick="startStop()">Start</button>
+        <button id="lapReset" onclick="lapReset()">Lap</button>
+      </div>
+
+      <div class="laplist">
+      <ul id="lapList" class="lap-list"></ul>
+    </div>
+    </div>
+  </body>
+</html>
