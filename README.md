@@ -22,3 +22,33 @@ A sleek, lightweight web-based stopwatch application built with vanilla HTML, CS
 ├── index.html       # Document markup, SVG dial, and control buttons
 ├── style.css        # Layout, typography, gradients, and animations
 └── script.js        # Timer calculations, interval handlers, and state management
+```
+
+---
+
+## 🕹️ How It Works
+
+| Action | When Stopped | When Running |
+| :--- | :--- | :--- |
+| **Left Button** | **Start:** Begins time tracking | **Stop:** Pauses current timer |
+| **Right Button** | **Reset:** Clears display and wipes lap list | **Lap:** Captures split time to list |
+
+---
+
+## 🛠️ Built With
+
+* **HTML5:** Semantic structuring and SVG graphics.
+* **CSS3:** Flexbox alignment, CSS gradients, and responsive sizing.
+* **JavaScript (ES6):** Interval management via `setInterval` and `Date` delta calculations to avoid drift.
+
+---
+
+## ⚡ Getting Started
+
+1. Clone or download this repository:
+   ```bash
+   git clone [https://github.com/your-username/stopwatch.git](https://github.com/your-username/stopwatch.git)
+   cd stopwatch
+   ```
+
+2. Open `index.html` directly in any web browser, or serve it locally using VS Code's **Live Server** extension.
